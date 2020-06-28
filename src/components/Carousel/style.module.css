@@ -1,0 +1,12 @@
+#container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    border: 1px black solid;
+    max-width: 100%;
+    justify-content: center;
+}
+
+#container img {
+    padding: 1%;
+}
