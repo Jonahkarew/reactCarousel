@@ -17,19 +17,27 @@ function Carousel() {
 
 
     const nextSlide = () =>{
-        if(nextIndex > images.length){
-            setNextIndex(0)
-        }
-        else if (index >= images.length - 1){
+     
+       if (index >= images.length - 1){
             setPrevIndex(images.length)
             setIndex(0)
         }
         else if (index <= images.length){
             setPrevIndex(index)
+            
             setNextIndex(index + 2)
+
             setIndex(index + 1)
 
             console.log(index)
+        }
+
+        if(nextIndex >= images.length - 1){
+            setNextIndex(0)
+        }
+
+        if(prevIndex >= images.length - 1){
+            setPrevIndex(0)
         }
     }
     
